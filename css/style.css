@@ -1,0 +1,47 @@
+.box {
+    float: right;
+    margin: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius:  5px 5px 5px 5px;
+    padding: 20px;
+    box-sizing: auto;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    box-sizing: border-box;
+    padding:50px;
+    margin: auto;
+    overflow: auto;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border:2px solid #cec6cd;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(36, 10, 10, 0.2);
+    border-radius: 5px 5px 5px 5px;
+    padding: 30px;
+}
+
+#content {
+    float: left;
+    width: 75%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 750px) {
+    aside, img {
+        width: 100%;
+        padding: 0;
+    }
+    #content {
+        width: 100%;
+        padding: 0px;
+        display: block;
+    }
+}
